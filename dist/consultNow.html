@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Barangay Health Center</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <section class="max-w-4xl mx-auto py-16">
+      <h2 class="text-3xl font-semibold mb-8 text-center">
+        Schedule a Consultation
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left column - Consultation Form -->
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">
+            Fill out the form below to schedule a consultation:
+          </h3>
+
+          <form
+            action="#"
+            method="post"
+            class="space-y-4"
+          >
+            <div class="flex flex-col">
+              <label
+                for="name"
+                class="text-sm text-gray-600"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="border px-4 py-2 rounded focus:outline-none focus:border-blue-500"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label
+                for="email"
+                class="text-sm text-gray-600"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="border px-4 py-2 rounded focus:outline-none focus:border-blue-500"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label
+                for="phone"
+                class="text-sm text-gray-600"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="border px-4 py-2 rounded focus:outline-none focus:border-blue-500"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label
+                for="date"
+                class="text-sm text-gray-600"
+                >Preferred Date</label
+              >
+              <input
+                type="date"
+                id="date"
+                name="date"
+                class="border px-4 py-2 rounded focus:outline-none focus:border-blue-500"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label
+                for="message"
+                class="text-sm text-gray-600"
+                >Additional Message (optional)</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="border px-4 py-2 rounded focus:outline-none focus:border-blue-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+            >
+              Schedule Now
+            </button>
+          </form>
+        </div>
+
+        <!-- Right column - Consultation Image -->
+        <div class="hidden md:flex items-center justify-center">
+          <img
+            src="consultation-image.jpg"
+            alt="Consultation Image"
+            class="rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
